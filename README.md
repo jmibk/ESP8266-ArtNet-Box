@@ -10,6 +10,13 @@ WHAT IT SHOULD DO
 - supports a oled display for control and analizing
 - enter values via rotary encoder
 
+
+THINGS TO DO
+
+- add a channel editor to change channel values on display for testing purposes.
+- add functionality for WS28xx led systems
+- add a web interface
+
 CONNECTION TO A ESP8266
 
 This code depends on a Lolin ESP8266 board using following connections:
@@ -171,9 +178,10 @@ If the W5100 is not connected to the unit, there will be a endless loop on start
 If Wifi is turning on, no connection can be established. The unit change to AP mode.
 Restart the unit. 
 
+
 MAIN ISSUES
 
 If the unit receives Art-Net, it restarts in an unperiodic timespan of minutes or hours. In that case you can see some stack things on the serial monitor from the esp. 9600 BAUD 8n1
 This is only when receiving Art-Net. If there are no Art-Net packets, there is no restart. 
-<try that if it is difference between wifi and ethernet>
+TODO: try that if it is difference between wifi and ethernet
 
